@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: #356492;
+  background-color: #e9ebee;
   color: #333;
   line-height: 1.6;
 }
@@ -173,49 +173,46 @@ body {
   margin-bottom: 10px;
 }
 
-/* ======== GALERIA ======== */
-.multimedia {
-  background-color: #e8eef7;
-  padding: 60px 0;
+/* ======== SLIDER DE IMAGENS ======== */
+.slider {
+    position: relative;
+    width: 100%;           /* ocupa 100% do contêiner */
+    max-width: 800px;      /* limite máximo opcional */
+    height: 50vh;          /* altura proporcional à tela */
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.multimedia h3 {
-  text-align: center;
-  font-size: 2em;
-  color: #004aad;
-  margin-bottom: 30px;
+.slides {
+    display: flex;
+    width: calc(100% * 1.75); /* 4 imagens, pode ajustar dinamicamente */
+    animation: slide 16s infinite;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  padding: 0 10px;
+.slides img {
+    width: 100%;           /* cada imagem ocupa 100% do slide */
+    flex-shrink: 0;
+    object-fit: cover;     /* preenche o slide, cortando partes se necessário */
+    height: 100%;          /* ocupa toda a altura do slider */
+}
+@media (max-width: 768px) {
+  .slider {
+    height: 30vh; /* slider menor em celulares */
+  }
 }
 
-.gallery figure {
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.gallery figure:hover {
-  transform: scale(1.03);
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.gallery figcaption {
-  text-align: center;
-  padding: 0.5rem;
-  font-size: 0.9rem;
-  color: #333;
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
 }
 
 /* ======== MÍDIA (VÍDEO E ÁUDIO) ======== */
@@ -310,4 +307,11 @@ footer .social-icons a:hover {
     flex-direction: column;
     align-items: center;
   }
+
+  .slider {
+    height: 250px;
+  }
 }
+/* =====================================================
+   FIM DO ESTILO GERAL UNIFICADO
+   ===================================================== */
