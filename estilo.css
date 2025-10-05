@@ -1,26 +1,209 @@
-.menu li a i {
-  margin-right: 8px;
-  color: #333;
+/* ======== ESTILO GERAL ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-.menu li a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
+body {
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
 }
-h2  {
-  color: #070606;
-  margin-bottom: 20px;
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-h1 {
-  color: #070606;
-  margin-bottom: 20px;
-}   
-h3 {
-  color: #070606;
-  margin-bottom: 15px;
-}           
-h4 {
-  color: #070606;
-  margin-bottom: 10px;
+
+/* ======== CABEÇALHO ======== */
+.site-header {
+    background-color: #004aad;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.brand {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ======== MENU ======== */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.menu li {
+    margin: 8px 12px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.menu a i {
+    margin-right: 6px;
+}
+
+.menu a:hover {
+    background-color: #003580;
+}
+
+/* ======== (Seção Principal) ======== */
+.principal {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+         url('https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.principal h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.principal p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+/* ======== BOTÕES ======== */
+.btn-primary,
+.btn-secondary,
+.btn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ffb703;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #e09e00;
+}
+
+.btn-secondary {
+    background-color: #219ebc;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #1a759f;
+}
+
+.btn-link {
+    color: #004aad;
+    text-decoration: underline;
+}
+
+.btn-link:hover {
+    color: #003580;
+}
+
+/* ======== DESTAQUES ======== */
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.highlight {
+    flex: 1 1 300px;
+    margin: 15px;
+    padding: 30px;
+    background-color: #f1f5f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.highlight:hover {
+    transform: translateY(-5px);
+}
+
+.highlight i {
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+/* ======== NOTÍCIAS ======== */
+.latest-news {
+    padding: 60px 0;
+    background-color: #e8eef7;
+    text-align: center;
+}
+
+.latest-news h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.news-item {
+    background-color: #fff;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.news-item h3 a {
+    color: #004aad;
+    text-decoration: none;
+}
+
+.news-item h3 a:hover {
+    text-decoration: underline;
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+    background-color: #004aad;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .highlight {
+        flex: 1 1 90%;
+    }
 }
