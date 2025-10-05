@@ -59,45 +59,43 @@
         <section class="multimedia container" aria-labelledby="sec-midia">
              <h3 id="sec-midia">Galeria e Mídia</h3>
 
-               <!-- Responsive gallery using <picture> and lazy loading -->
+               <!-- Galeria responsiva usando <picture> -->
             <div class="gallery" role="list">
-               <!-- Example of 1 image; replicate 20 imagens no /assets/img -->
+               <!-- Exemplo de 1 imagem; replicar 20 imagens em /assets/img -->
                  <figure role="listitem">
                         <picture>
                                <source srcset="assets/img/galeria1.avif" type="image/avif">
-                              <source srcset="assets/img/galeria1.webp" type="image/webp">
-                               <img loading="lazy" src="assets/img/galeria1.jpg" alt="Voluntários em ação" width="400" height="300">
+                               <source srcset="https://ibb.co/H9gSr47" type="image/webp">
+                               <img loading="lazy" src="https://ibb.co/H9gSr47" alt="Voluntários em ação" width="400" height="300">
                         </picture>
                       <figcaption>Voluntários distribuindo cestas</figcaption>
                  </figure>
-                    <!-- ... até 20 imagens -->
+
+                <!-- ... até 20 imagens -->
             </div>
 
+            <div class="media-players">
+                <h4>Vídeo institucional</h4>
+                <video controls preload="metadata" width="640">
+                    <source src="assets/video/institucional.mp4" type="video/mp4">
+                    Seu navegador não suporta video.
+                </video>
+                <h4>Depoimento em áudio</h4>
+                    <audio controls>
+                        <source src="assets/audio/depoimento1.mp3" type="audio/mpeg">
+                    </audio>
+            </div>
+        </section>  
 
-<div class="media-players">
-<h4>Vídeo institucional</h4>
-<video controls preload="metadata" width="640">
-<source src="assets/video/institucional.mp4" type="video/mp4">
-Seu navegador não suporta video.
-</video>
-
-
-<h4>Depoimento em áudio</h4>
-<audio controls>
-<source src="assets/audio/depoimento1.mp3" type="audio/mpeg">
-</audio>
-</div>
-</section>
-
-
-<section class="charts container" aria-labelledby="sec-charts">
-<h3 id="sec-charts">Visualizações</h3>
-<div class="chart-row">
-<canvas id="chart-resources" width="400" height="300" aria-label="Distribuição de recursos por projeto" role="img"></canvas>
-<canvas id="chart-volunteers" width="400" height="300" aria-label="Evolução de voluntários" role="img"></canvas>
-<canvas id="chart-impact" width="400" height="300" aria-label="Impacto por região" role="img"></canvas>
-</div>
-</section>
+         <!-- Gráficos com <canvas> -->
+        <section class="charts container" aria-labelledby="sec-charts">
+            <h3 id="sec-charts">Visualizações</h3>
+            <div class="chart-row">
+                    <canvas id="chart-resources" width="400" height="300" aria-label="Distribuição de recursos por projeto" role="img"></canvas>
+                    <canvas id="chart-volunteers" width="400" height="300" aria-label="Evolução de voluntários" role="img"></canvas>
+                    <canvas id="chart-impact" width="400" height="300" aria-label="Impacto por região" role="img"></canvas>
+            </div>
+        </section>
     </main>
 </body>
 </html>
