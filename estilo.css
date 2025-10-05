@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: #f9fafb;
+  background-color: #356492;
   color: #333;
   line-height: 1.6;
 }
@@ -28,8 +28,8 @@ body {
 
 /* ======== CABEÇALHO ======== */
 .site-header {
-  background-color: #004aad;
-  color: #fff;
+  background-color: #414142;
+  color: #fcf9f9;
   padding: 20px 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
@@ -242,7 +242,7 @@ audio {
 /* ======== GRÁFICOS ======== */
 .charts {
   padding: 60px 0;
-  background-color: #fff;
+  background-color: #eeebeb;
 }
 
 .charts h3 {
@@ -268,7 +268,7 @@ canvas {
 
 /* ======== RODAPÉ ======== */
 footer {
-  background-color: #004aad;
+  background-color: #0e0f11;
   color: #fff;
   text-align: center;
   padding: 20px;
