@@ -1,209 +1,313 @@
-/* ======== ESTILO GERAL ======== */
+/* =====================================================
+   ESTILO GERAL UNIFICADO — ORGANIZAÇÃO SOCIAL
+   ===================================================== */
+
+/* ======== RESET E BASE ======== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #f9fafb;
-    color: #333;
-    line-height: 1.6;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ======== CABEÇALHO ======== */
 .site-header {
-    background-color: #004aad;
-    color: #fff;
-    padding: 20px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  background-color: #004aad;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .brand {
-    font-size: 1.8em;
-    font-weight: bold;
-    text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.5px;
 }
 
 /* ======== MENU ======== */
 .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: 15px;
 }
 
 .menu li {
-    margin: 8px 12px;
+  margin: 8px 12px;
 }
 
 .menu a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    transition: 0.3s;
-    padding: 8px 12px;
-    border-radius: 6px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: transparent;
 }
 
 .menu a i {
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
 .menu a:hover {
-    background-color: #003580;
+  background-color: #003580;
 }
 
-/* ======== (Seção Principal) ======== */
+/* ======== SEÇÃO PRINCIPAL ======== */
 .principal {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-         url('https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=1600&q=80');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  border-radius: 0 0 10px 10px;
 }
 
 .principal h2 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
+  font-size: 2.5em;
+  margin-bottom: 15px;
 }
 
 .principal p {
-    font-size: 1.2em;
-    margin-bottom: 25px;
+  font-size: 1.2em;
+  margin-bottom: 25px;
 }
 
 /* ======== BOTÕES ======== */
 .btn-primary,
 .btn-secondary,
 .btn-link {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
 .btn-primary {
-    background-color: #ffb703;
-    color: #000;
+  background-color: #ffb703;
+  color: #000;
 }
 
 .btn-primary:hover {
-    background-color: #e09e00;
+  background-color: #e09e00;
 }
 
 .btn-secondary {
-    background-color: #219ebc;
-    color: #fff;
-    margin-left: 10px;
+  background-color: #219ebc;
+  color: #fff;
+  margin-left: 10px;
 }
 
 .btn-secondary:hover {
-    background-color: #1a759f;
+  background-color: #1a759f;
 }
 
 .btn-link {
-    color: #004aad;
-    text-decoration: underline;
+  color: #004aad;
+  text-decoration: underline;
 }
 
 .btn-link:hover {
-    color: #003580;
+  color: #003580;
 }
 
 /* ======== DESTAQUES ======== */
 .highlights {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    padding: 60px 0;
-    background-color: #fff;
+  padding: 60px 0;
+  background-color: #fff;
 }
 
-.highlight {
-    flex: 1 1 300px;
-    margin: 15px;
-    padding: 30px;
-    background-color: #f1f5f9;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+.highlights h3 {
+  text-align: center;
+  font-size: 2em;
+  color: #004aad;
+  margin-bottom: 30px;
 }
 
-.highlight:hover {
-    transform: translateY(-5px);
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
-.highlight i {
-    color: #004aad;
-    margin-bottom: 10px;
+.grid article {
+  background-color: #f1f5f9;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-/* ======== NOTÍCIAS ======== */
-.latest-news {
-    padding: 60px 0;
-    background-color: #e8eef7;
-    text-align: center;
+.grid article:hover {
+  transform: translateY(-5px);
 }
 
-.latest-news h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
+.grid h4 {
+  color: #004aad;
+  margin-bottom: 10px;
 }
 
-.news-item {
-    background-color: #fff;
-    margin: 15px auto;
-    padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 700px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* ======== GALERIA ======== */
+.multimedia {
+  background-color: #e8eef7;
+  padding: 60px 0;
 }
 
-.news-item h3 a {
-    color: #004aad;
-    text-decoration: none;
+.multimedia h3 {
+  text-align: center;
+  font-size: 2em;
+  color: #004aad;
+  margin-bottom: 30px;
 }
 
-.news-item h3 a:hover {
-    text-decoration: underline;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 0 10px;
+}
+
+.gallery figure {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery figure:hover {
+  transform: scale(1.03);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery figcaption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* ======== MÍDIA (VÍDEO E ÁUDIO) ======== */
+.media-players {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.media-players h4 {
+  margin: 1rem 0;
+  color: #004aad;
+}
+
+video,
+audio {
+  width: 90%;
+  max-width: 640px;
+  margin: 0.5rem auto;
+  display: block;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* ======== GRÁFICOS ======== */
+.charts {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.charts h3 {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 2rem;
+  font-size: 1.8em;
+}
+
+.chart-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+canvas {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* ======== RODAPÉ ======== */
 footer {
-    background-color: #004aad;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    font-size: 0.9em;
+  background-color: #004aad;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  margin-top: 3rem;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 1.3em;
+  transition: 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #ffb703;
 }
 
 /* ======== RESPONSIVIDADE ======== */
 @media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        align-items: center;
-    }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .hero h2 {
-        font-size: 1.8em;
-    }
+  .principal h2 {
+    font-size: 1.8em;
+  }
 
-    .highlight {
-        flex: 1 1 90%;
-    }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
