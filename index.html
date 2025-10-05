@@ -55,37 +55,34 @@
                 </li>
             </ul>
         </section>
-
+             <!-- Galeria transformada em slider -->
         <section class="multimedia container" aria-labelledby="sec-midia">
-             <h3 id="sec-midia">Galeria e Mídia</h3>
-
-               <!-- Galeria responsiva usando <picture> -->
-            <div class="gallery" role="list">
-               <!-- Exemplo de 1 imagem; replicar 20 imagens em /assets/img -->
-                 <figure role="listitem">
-                        <picture>
-                               <source srcset="assets/img/galeria1.avif" type="image/avif">
-                               <img src="organizacao-social-og.webp" alt="Nova imagem" width="400" height="300">
-                               <img loading="lazy" src="https://ibb.co/H9gSr47" alt="Voluntários em ação" width="400" height="300">
-                        </picture>
-                      <figcaption>Voluntários distribuindo cestas</figcaption>
-                 </figure>
-
-                <!-- ... até 20 imagens -->
-            </div>
-
-            <div class="media-players">
-                <h4>Vídeo institucional</h4>
-                <video controls preload="metadata" width="640">
-                    <source src="assets/video/institucional.mp4" type="video/mp4">
-                    Seu navegador não suporta video.
-                </video>
-                <h4>Depoimento em áudio</h4>
-                    <audio controls>
-                        <source src="assets/audio/depoimento1.mp3" type="audio/mpeg">
-                    </audio>
-            </div>
-        </section>  
+                 <h3 id="sec-midia">Galeria e Mídia</h3>
+                 <div class="slider">
+                    <div class="slides">
+                         <img src="https://www.setasc.mt.gov.br/documents/364148/15265920/_JPT8121.jpg/ee18b368-9d95-9877-04df-ea13d8628f0c?t=1598625299149" alt="Voluntários distribuindo cestas">
+                         <img src="https://www.setasc.mt.gov.br/documents/364148/15265920/_JPT8426.jpg/1683116f-e58d-8ec2-361d-c54725440e89?t=1598639729843+&imageThumbnail=3" alt="Projeto educação">
+                         <img src="https://ajudou.org/wp-content/uploads/2025/08/Volei-2-scaled.jpg" alt="Saúde comunitária">
+                         <img src="https://apaecuritiba.org.br/wp-content/uploads/2023/05/foto-02.05.png" alt="Alimentação">
+                                    <!-- Adicione mais imagens aqui -->
+                     </div>
+                 </div>
+                             <!-- Vídeo e áudio continuam abaixo do slider -->
+                 <div class="media-players">
+                         <h4>Vídeo institucional</h4>
+                     <iframe width="640" height="360" 
+                         src="https://www.youtube.com/embed/LfIqsjSTh1Y?start=31" 
+                         title="Vídeo institucional" 
+                         frameborder="0" 
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                         allowfullscreen>
+                     </iframe>
+                      <h4>Depoimento em áudio</h4>
+                     <audio controls>
+                         <source src="assets/audio/depoimento1.mp3" type="audio/mpeg">
+                     </audio>
+                 </div>
+         </section>
 
          <!-- Gráficos com <canvas> -->
         <section class="charts container" aria-labelledby="sec-charts">
