@@ -27,46 +27,77 @@
         </div>
     </header>
     <main>
-        <section class="principal">
-            <div class="container">
-                <h2>Junte-se a nós para fazer a diferença!</h2>
-                <p>Transformando vidas e comunidades através da solidariedade.</p>
-                <a href="volutariado.html" class="btn-primary">Seja um Voluntário</a>
-                <a href="doacoes.html" class="btn-secondary">Faça uma Doação</a>
-            </div>
+        <section class="principal container">
+             <h2>Transformando vidas através de ações locais</h2>
+             <p>Conheça nossos projetos, participe como voluntário e ajude com doações.</p>
+         </section>
+            <!-- ======== (Seção Principal) ======== -->
+        <section class="highlights container" aria-labelledby="sec-destaques">
+            <h3 id="sec-destaques">Destaques</h3>
+            <ul class="grid">
+                 <li>
+                    <article>
+                     <h4>Projeto Educação</h4>
+                     <p>Oficinas e reforço escolar para crianças.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h4>Saúde Comunitária</h4>
+                        <p>Atendimento básico e campanhas de prevenção.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h4>Alimentação</h4>
+                        <p>Distribuição de cestas básicas semanalmente.</p>
+                    </article>
+                </li>
+            </ul>
         </section>
-        <section class="highlights">
-            <div class="container">
-                <div class="highlight">
-                    <i class="fa-solid fa-hands-helping fa-3x"></i>
-                    <h3>Voluntariado</h3>
-                    <p>Participe de nossos projetos e ajude a transformar vidas.</p>
-                    <a href="voluntariado.html" class="btn-link">Saiba mais</a>
-                </div>
-                <div class="highlight">
-                    <i class="fa-solid fa-hand-holding-heart fa-3x"></i>
-                    <h3>Doações</h3>
-                    <p>Sua contribuição faz a diferença. Veja como doar.</p>
-                    <a href="doacoes.html" class="btn-link">Saiba mais</a>
-                </div>
-                <div class="highlight">
-                    <i class="fa-solid fa-chart-line fa-3x"></i>
-                    <h3>Transparência</h3>
-                    <p>Confira nossos relatórios e veja como utilizamos suas doações.</p>
-                    <a href="transparencia.html" class="btn-link">Saiba mais</a>
-                </div>
+
+        <section class="multimedia container" aria-labelledby="sec-midia">
+             <h3 id="sec-midia">Galeria e Mídia</h3>
+
+               <!-- Responsive gallery using <picture> and lazy loading -->
+            <div class="gallery" role="list">
+               <!-- Example of 1 image; replicate 20 imagens no /assets/img -->
+                 <figure role="listitem">
+                        <picture>
+                               <source srcset="assets/img/galeria1.avif" type="image/avif">
+                              <source srcset="assets/img/galeria1.webp" type="image/webp">
+                               <img loading="lazy" src="assets/img/galeria1.jpg" alt="Voluntários em ação" width="400" height="300">
+                        </picture>
+                      <figcaption>Voluntários distribuindo cestas</figcaption>
+                 </figure>
+                    <!-- ... até 20 imagens -->
             </div>
-        </section>
-        <section class="latest-news">
-            <div class="container">
-                <h2>Últimas Notícias</h2>
-                <article class="news-item">
-                    <h3><a href="blog.html">Novo Projeto de Educação Lançado</a></h3>
-                    <p>Estamos empolgados em anunciar o lançamento de nosso novo projeto focado em educação para crianças carentes...</p>
-                </article>
-                <article class="news-item">
-                    <h3><a href="blog.html">Campanha de Doação de Inverno</a></h3>
-                    <p>Com a chegada do inverno, estamos iniciando nossa
+
+
+<div class="media-players">
+<h4>Vídeo institucional</h4>
+<video controls preload="metadata" width="640">
+<source src="assets/video/institucional.mp4" type="video/mp4">
+Seu navegador não suporta video.
+</video>
+
+
+<h4>Depoimento em áudio</h4>
+<audio controls>
+<source src="assets/audio/depoimento1.mp3" type="audio/mpeg">
+</audio>
+</div>
+</section>
+
+
+<section class="charts container" aria-labelledby="sec-charts">
+<h3 id="sec-charts">Visualizações</h3>
+<div class="chart-row">
+<canvas id="chart-resources" width="400" height="300" aria-label="Distribuição de recursos por projeto" role="img"></canvas>
+<canvas id="chart-volunteers" width="400" height="300" aria-label="Evolução de voluntários" role="img"></canvas>
+<canvas id="chart-impact" width="400" height="300" aria-label="Impacto por região" role="img"></canvas>
+</div>
+</section>
     </main>
 </body>
 </html>
